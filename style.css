@@ -96,7 +96,10 @@ justify-content:space-evenly;
 gap:50px;
 }
 .humi{
+    padding:10px;
     display: flex;
+    transition: 0.3s ease;
+    gap:10px;
 .im{
 font-size:30px;
 }
@@ -108,4 +111,9 @@ font-size:30px;
     font-size:15px;
     font-weight: 1.5em;
 }
+}
+.humi:hover{
+    border-radius:12px;
+    background-color:rgb(169, 240, 240);
+    padding:12px 12px 2px 12px;
 }
