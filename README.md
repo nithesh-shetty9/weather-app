@@ -15,3 +15,13 @@ The second .then() runs after the JSON has been successfully converted.
 })
 
 Here, data is the actual JavaScript object containing the weather information returned by the API. You can access values such as the city name, temperature, humidity, weather description, wind speed, and more using this object.
+JavaScript Program 
+ ▼ fetch(URL) 
+    ▼ HTTP GET Request Sent 
+     ▼ OpenWeatherMap Server 
+      ▼ Server Processes Request 
+        ▼ JSON Response Returned 
+         ▼ Response Object 
+           response.json() 
+            ▼ JavaScript Object (data) 
+              ▼ Use the Weather Information
