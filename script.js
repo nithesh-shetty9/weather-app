@@ -19,9 +19,14 @@ icon.addEventListener("click",()=>{
 async function weather(loc)
 {
     const url=`https://api.openweathermap.org/data/2.5/weather?q=${loc}&appid=${key}`;
-    const data= await fetch(url).then((response)=>response.json());
+    const data= await fetch(url).then((response)=>response.json()).catch((error)=>console.error("Error fetching weather data:", error));
     console.log(data);
-    temp.innerHTML=`${Math.round(301.71-273.15)}°C`;
+    if(data.cod==="404")
+    {
+        alert("City not found. Please enter a valid city name.");
+        return;
+    }
+    temp.innerHTML=`${Math.round(data.main.temp-273.15)}°C`;
     description.innerHTML=data.weather[0].description;
     humidity.innerHTML=`${data.main.humidity}%`;
     wind.innerHTML=`${data.wind.speed} Km/H`;

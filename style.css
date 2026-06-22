@@ -121,3 +121,104 @@ font-size:30px;
 .wind{
     color:green;
 }
+/* =========================
+   Responsive Design
+========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .box{
+        width:60%;
+        left:50%;
+        transform:translateX(-50%);
+        top:120px;
+    }
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .first{
+        font-size:2.5rem;
+        margin-top:20px;
+    }
+
+    .box{
+        position:relative;
+        width:90%;
+        left:50%;
+        top:30px;
+        transform:translateX(-50%);
+        padding:20px;
+    }
+
+    #search{
+        width:100%;
+        font-size:1rem;
+    }
+
+    header{
+        width:100%;
+    }
+
+    .middle h1{
+        font-size:2.2rem;
+    }
+
+    .middle p{
+        font-size:1rem;
+    }
+
+    footer{
+        flex-wrap:wrap;
+        gap:20px;
+        justify-content:center;
+    }
+
+    .humi{
+        width:45%;
+        justify-content:center;
+    }
+}
+
+/* Small phones (Vivo Y35, Redmi, Samsung A series etc.) */
+@media (max-width:480px){
+
+    .first{
+        font-size:2rem;
+    }
+
+    .box{
+        width:95%;
+        padding:18px;
+    }
+
+    #search{
+        width:100%;
+        padding:10px;
+        font-size:16px;
+    }
+
+    .icon{
+        padding:10px;
+    }
+
+    .middle h1{
+        font-size:2rem;
+    }
+
+    .middle p{
+        font-size:0.95rem;
+    }
+
+    footer{
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .humi{
+        width:100%;
+        justify-content:center;
+    }
+}
