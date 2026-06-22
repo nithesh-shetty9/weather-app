@@ -1,3 +1,9 @@
+.........................................
+https://nithesh-shetty9.github.io/weather-app/
+................................
+
+
+
 How fetch is implemented here 
 ..........................
 let t=fetch(`https://api.openweathermap.org/data/2.5/weather?q=${loc}&appid=${key}`);
@@ -25,3 +31,15 @@ JavaScript Program
            response.json() 
             ▼ JavaScript Object (data) 
               ▼ Use the Weather Information
+
+
+
+
+
+
+
+
+
+
+
+              
